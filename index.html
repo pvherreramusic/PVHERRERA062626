@@ -172,6 +172,13 @@
   .bc-cap b{color:var(--ember-glow);font-weight:400}
   .bc-embed{display:block;width:100%;max-width:420px;height:120px;border:1px solid var(--line)}
 
+  .video-frame{
+    position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;
+    border:1px solid var(--line);background:var(--void-2);
+    box-shadow:0 30px 70px -24px rgba(0,0,0,.7);
+  }
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+
   /* ---------- shared section ---------- */
   .band{padding:clamp(80px,12vw,150px) 0;position:relative}
   .band + .band{border-top:1px solid var(--line)}
@@ -346,6 +353,7 @@
 <nav id="nav">
   <a href="#top" class="brand">PV HERRERA</a>
   <div class="nav-links">
+    <a href="#welcome">Watch</a>
     <a href="#record">Release</a>
     <a href="#discography">Catalog</a>
     <a href="#live">Live</a>
@@ -389,6 +397,19 @@
     </figure>
   </div>
 </header>
+
+<!-- WELCOME VIDEO -->
+<section class="band" id="welcome">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Welcome</span>
+      <h2>Press play.</h2>
+    </div>
+    <div class="video-frame reveal">
+      <iframe src="https://www.youtube.com/embed/xl4MksTBR6I?si=T6NuelCpcGvWrFa2" title="PV Herrera — welcome video" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
 <!-- FEATURED RECORD -->
 <section class="band" id="record">
