@@ -5,6 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PV Herrera — Musical Tangents</title>
 <meta name="description" content="PV Herrera — experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp since 2012." />
+
+<!-- SEO / indexing -->
+<link rel="canonical" href="https://www.pvherreramusic.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta name="author" content="PV Herrera" />
+<meta name="theme-color" content="#0a4670" />
+<meta name="keywords" content="PV Herrera, post-rock, experimental rock, instrumental, San Luis Obispo, Bandcamp, Musical Tangents" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="PV Herrera" />
+<meta property="og:title" content="PV Herrera — Musical Tangents" />
+<meta property="og:description" content="Experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp." />
+<meta property="og:url" content="https://www.pvherreramusic.com/" />
+<meta property="og:image" content="https://f4.bcbits.com/img/a4012467896_10.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1200" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="PV Herrera — Musical Tangents" />
+<meta name="twitter:description" content="Experimental post-rock from San Luis Obispo, California." />
+<meta name="twitter:image" content="https://f4.bcbits.com/img/a4012467896_10.jpg" />
+
+<!-- Structured data: artist, catalog, live show -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MusicGroup",
+      "@id": "https://www.pvherreramusic.com/#artist",
+      "name": "PV Herrera",
+      "genre": ["Post-rock", "Experimental rock", "Indie rock"],
+      "foundingDate": "2011",
+      "foundingLocation": { "@type": "Place", "name": "San Luis Obispo, California, USA" },
+      "url": "https://www.pvherreramusic.com/",
+      "email": "pvherrerabooking@gmail.com",
+      "image": "https://f4.bcbits.com/img/a4012467896_10.jpg",
+      "description": "Experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp.",
+      "sameAs": [
+        "https://pvherrera.bandcamp.com/",
+        "https://www.youtube.com/@PVHerrera"
+      ],
+      "album": [
+        { "@type": "MusicAlbum", "name": "Xanax and Mercy", "datePublished": "2019-06-30", "url": "https://pvherrera.bandcamp.com/album/xanax-and-mercy", "image": "https://f4.bcbits.com/img/a0817267631_5.jpg" },
+        { "@type": "MusicAlbum", "name": "Cigarettes and Weddings", "datePublished": "2012-09-09", "url": "https://pvherrera.bandcamp.com/album/cigarettes-and-weddings", "image": "https://f4.bcbits.com/img/a4012467896_10.jpg" },
+        { "@type": "MusicAlbum", "name": "Her Atmosphere Causes the Fear", "datePublished": "2011-06-23", "url": "https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear", "image": "https://f4.bcbits.com/img/a0321114466_5.jpg" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.pvherreramusic.com/#website",
+      "url": "https://www.pvherreramusic.com/",
+      "name": "PV Herrera",
+      "publisher": { "@id": "https://www.pvherreramusic.com/#artist" }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -302,6 +362,11 @@
     transition:all .25s ease;
   }
   .listen a:hover{color:var(--paper);border-color:var(--frost-faint);transform:translateY(-2px)}
+  .foot-booking{margin-top:34px}
+  .foot-booking .eyebrow{display:block;margin-bottom:12px}
+  .foot-booking .mailto{display:inline-block;font-family:var(--mono);font-size:.9rem;color:var(--frost);
+    border-bottom:1px solid var(--frost-faint);padding-bottom:3px;transition:color .25s ease,border-color .25s ease}
+  .foot-booking .mailto:hover{color:var(--ember-glow);border-color:var(--ember)}
   .signup label{display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;
     text-transform:uppercase;color:var(--ember);margin-bottom:14px}
   .signup p{color:var(--frost-dim);font-size:.92rem;line-height:1.6;margin-bottom:20px;max-width:38ch;font-weight:300}
@@ -328,6 +393,33 @@
   :focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
 
   /* ---------- RESPONSIVE ---------- */
+  /* album grid */
+  .disc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(18px,2.6vw,32px)}
+  .album-card{display:block;color:inherit}
+  .album-card .art{position:relative;aspect-ratio:1;overflow:hidden;border:1px solid var(--line);background:var(--void-2)}
+  .album-card .art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .album-card:hover .art img{transform:scale(1.05)}
+  .album-card .art::after{content:"↗";position:absolute;top:10px;right:13px;font-family:var(--mono);font-size:.82rem;
+    color:var(--paper);opacity:0;transform:translateY(-5px);transition:all .3s ease;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+  .album-card:hover .art::after{opacity:1;transform:none}
+  .album-card .am{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:15px}
+  .album-card .am .nm{font-family:var(--serif);font-size:1.4rem;line-height:1.05}
+  .album-card .am .nm .it{font-style:italic;color:var(--frost)}
+  .album-card .am .yr{font-family:var(--mono);font-size:.74rem;color:var(--frost-dim);white-space:nowrap}
+  .album-card:hover .am .yr{color:var(--ember)}
+
+  /* active-section nav */
+  .nav-links a.active{color:var(--paper)}
+
+  /* back to top */
+  .to-top{position:fixed;right:22px;bottom:22px;z-index:90;width:46px;height:46px;border-radius:50%;
+    border:1px solid var(--line);background:rgba(10,70,112,.82);backdrop-filter:blur(8px);color:var(--paper);
+    cursor:pointer;display:grid;place-items:center;opacity:0;transform:translateY(12px);pointer-events:none;
+    transition:opacity .35s ease,transform .35s ease,border-color .25s ease,box-shadow .25s ease}
+  .to-top.show{opacity:1;transform:none;pointer-events:auto}
+  .to-top:hover{border-color:var(--ember);color:var(--ember-glow);box-shadow:0 0 20px rgba(255,122,89,.3)}
+  .to-top svg{width:16px;height:16px;fill:currentColor}
+
   @media (max-width:880px){
     .nav-links a:not(.amb-wrap){display:none}
     .hero-inner{grid-template-columns:1fr;gap:34px}
@@ -351,20 +443,21 @@
 <body>
 
 <nav id="nav">
-  <a href="#top" class="brand">PV HERRERA</a>
+  <a href="#home" class="brand">PV HERRERA</a>
   <div class="nav-links">
     <a href="#welcome">Watch</a>
-    <a href="#record">Release</a>
+    <a href="#latest-release">Release</a>
     <a href="#discography">Catalog</a>
-    <a href="#live">Live</a>
+    <a href="#shows">Live</a>
     <a href="#about">About</a>
+    <a href="#booking">Booking</a>
     <button class="amb" id="ambBtn" aria-pressed="false" title="Toggle ambient drone">
       <span class="dot" aria-hidden="true"></span><span id="ambTxt">ambience</span>
     </button>
   </div>
 </nav>
 
-<a id="top"></a>
+<a id="home"></a>
 <header>
   <div class="sun" aria-hidden="true"></div>
   <div class="wrap hero-inner">
@@ -412,7 +505,7 @@
 </section>
 
 <!-- FEATURED RECORD -->
-<section class="band" id="record">
+<section class="band" id="latest-release">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">The record</span>
@@ -468,24 +561,20 @@
       <h2>The catalog, in reverse.</h2>
     </div>
     <div class="reveal">
-      <a class="disc-row" href="https://pvherrera.bandcamp.com/album/xanax-and-mercy" target="_blank" rel="noopener">
-        <span class="disc-year">2019</span>
-        <span class="disc-name">Xanax and <span class="it">Mercy</span></span>
-        <span class="disc-note">Self-released in June 2019.</span>
-        <span class="disc-fmt">Album ↗</span>
-      </a>
-      <a class="disc-row" href="https://pvherrera.bandcamp.com/album/cigarettes-and-weddings" target="_blank" rel="noopener">
-        <span class="disc-year">2012</span>
-        <span class="disc-name">Cigarettes and <span class="it">Weddings</span></span>
-        <span class="disc-note">Early full-length; reissued for its tenth anniversary.</span>
-        <span class="disc-fmt">Album ↗</span>
-      </a>
-      <a class="disc-row" href="https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear" target="_blank" rel="noopener">
-        <span class="disc-year">2011</span>
-        <span class="disc-name">Her Atmosphere <span class="it">Causes the Fear</span></span>
-        <span class="disc-note">Four-track early release, June 2011.</span>
-        <span class="disc-fmt">Album ↗</span>
-      </a>
+      <div class="disc-grid">
+        <a class="album-card" href="https://pvherrera.bandcamp.com/album/xanax-and-mercy" target="_blank" rel="noopener">
+          <div class="art"><img src="https://f4.bcbits.com/img/a0817267631_5.jpg" alt="Cover of Xanax and Mercy by PV Herrera" loading="lazy" /></div>
+          <div class="am"><span class="nm">Xanax and <span class="it">Mercy</span></span><span class="yr">2019</span></div>
+        </a>
+        <a class="album-card" href="https://pvherrera.bandcamp.com/album/cigarettes-and-weddings" target="_blank" rel="noopener">
+          <div class="art"><img src="https://f4.bcbits.com/img/a4012467896_5.jpg" alt="Cover of Cigarettes and Weddings by PV Herrera" loading="lazy" /></div>
+          <div class="am"><span class="nm">Cigarettes and <span class="it">Weddings</span></span><span class="yr">2012</span></div>
+        </a>
+        <a class="album-card" href="https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear" target="_blank" rel="noopener">
+          <div class="art"><img src="https://f4.bcbits.com/img/a0321114466_5.jpg" alt="Cover of Her Atmosphere Causes the Fear by PV Herrera" loading="lazy" /></div>
+          <div class="am"><span class="nm">Her Atmosphere <span class="it">Causes the Fear</span></span><span class="yr">2011</span></div>
+        </a>
+      </div>
       <div class="disc-foot">
         <a href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Full catalog on Bandcamp →</a>
       </div>
@@ -494,18 +583,16 @@
 </section>
 
 <!-- TOUR -->
-<section class="band" id="live">
+<section class="band" id="shows">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">Shows</span>
       <h2>Live.</h2>
     </div>
     <div class="reveal">
-      <!-- Duplicate this .show block to add more shows. Use class="tix sold" for a sold-out date. -->
-      <div class="show">
-        <span class="date">FRI <span>·</span> AUG 7, 2026</span>
-        <span class="where"><div class="city">San Luis Obispo, CA</div><div class="venue">Linnaea's Café · 8:00 PM</div></span>
-        <span class="tix free">Free entry</span>
+      <div class="empty">
+        <p>No dates on the calendar right now.</p>
+        <a class="follow" href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Follow on Bandcamp →</a>
       </div>
     </div>
   </div>
@@ -543,6 +630,10 @@
         <div class="listen">
           <a href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
           <a href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        <div class="foot-booking" id="booking">
+          <span class="eyebrow cool">Booking &amp; press</span>
+          <a class="mailto" href="mailto:pvherrerabooking@gmail.com">pvherrerabooking@gmail.com</a>
         </div>
       </div>
       <div class="signup">
@@ -633,8 +724,42 @@
   });
 
 
+  /* ---------- active-section nav highlight ---------- */
+  var navMap = {};
+  document.querySelectorAll(".nav-links a").forEach(function(a){
+    var href = a.getAttribute("href");
+    if(href && href.charAt(0) === "#") navMap[href.slice(1)] = a;
+  });
+  var sectionIds = ["welcome","latest-release","discography","shows","about"];
+  if("IntersectionObserver" in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          for(var k in navMap){ if(navMap.hasOwnProperty(k)) navMap[k].classList.remove("active"); }
+          var id = e.target.getAttribute("id");
+          if(navMap[id]) navMap[id].classList.add("active");
+        }
+      });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    sectionIds.forEach(function(id){ var el = document.getElementById(id); if(el) spy.observe(el); });
+  }
+
+  /* ---------- back to top ---------- */
+  var toTop = document.getElementById("toTop");
+  if(toTop){
+    window.addEventListener("scroll", function(){
+      toTop.classList.toggle("show", window.scrollY > 600);
+    }, {passive:true});
+    toTop.addEventListener("click", function(){
+      window.scrollTo({ top:0, behavior: reduce ? "auto" : "smooth" });
+    });
+  }
+
   /* ---------- (mailing-list form removed; follow links go straight to Bandcamp) ---------- */
 })();
-</script>
+</script><button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
 </body>
 </html>
