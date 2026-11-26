@@ -48,11 +48,12 @@
       "description": "Experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp.",
       "sameAs": [
         "https://pvherrera.bandcamp.com/",
-        "https://www.youtube.com/@PVHerrera"
+        "https://www.youtube.com/@PVHerrera",
+        "https://music.apple.com/us/album/cigarettes-and-weddings/6837462444"
       ],
       "album": [
         { "@type": "MusicAlbum", "name": "Xanax and Mercy", "datePublished": "2019-06-30", "url": "https://pvherrera.bandcamp.com/album/xanax-and-mercy", "image": "https://f4.bcbits.com/img/a0817267631_5.jpg" },
-        { "@type": "MusicAlbum", "name": "Cigarettes and Weddings", "datePublished": "2012-09-09", "url": "https://pvherrera.bandcamp.com/album/cigarettes-and-weddings", "image": "https://f4.bcbits.com/img/a4012467896_10.jpg" },
+        { "@type": "MusicAlbum", "name": "Cigarettes and Weddings", "datePublished": "2012-09-09", "url": "https://pvherrera.bandcamp.com/album/cigarettes-and-weddings", "sameAs": "https://music.apple.com/us/album/cigarettes-and-weddings/6837462444", "image": "https://f4.bcbits.com/img/a4012467896_10.jpg" },
         { "@type": "MusicAlbum", "name": "Her Atmosphere Causes the Fear", "datePublished": "2011-06-23", "url": "https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear", "image": "https://f4.bcbits.com/img/a0321114466_5.jpg" }
       ]
     },
@@ -279,6 +280,7 @@
     border-radius:40px;color:var(--paper);transition:all .25s ease;
   }
   .rel-listen:hover,.follow:hover{border-color:var(--ember);color:var(--ember-glow);box-shadow:0 0 18px rgba(255,122,89,.24)}
+  .rel-links{display:flex;flex-wrap:wrap;gap:12px}
   .empty{padding:42px 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .empty p{color:var(--frost);font-size:1.12rem;margin-bottom:20px;font-weight:300}
   .disc-foot{margin-top:26px}
@@ -558,7 +560,10 @@
         <p class="rel-anniv">Celebrating 14 years since September 9, 2012</p>
         <p class="rel-blurb">An early full-length, self-released in September 2012 and brought back for its tenth anniversary. Experimental, guitar-driven post-rock out of California's central coast.</p>
         <p class="rel-note">Includes the track "Selena Gomez."</p>
-        <a class="rel-listen" href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Listen on Bandcamp →</a>
+        <div class="rel-links">
+          <a class="rel-listen" href="https://pvherrera.bandcamp.com/album/cigarettes-and-weddings" target="_blank" rel="noopener">Bandcamp →</a>
+          <a class="rel-listen" href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">Apple Music →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -641,6 +646,7 @@
         <div class="listen">
           <a href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
           <a href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">Apple Music</a>
         </div>
         <div class="foot-booking" id="booking">
           <span class="eyebrow cool">Booking &amp; press</span>
