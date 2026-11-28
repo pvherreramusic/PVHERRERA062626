@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PV Herrera — Musical Tangents</title>
-<meta name="description" content="PV Herrera — experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp since 2012." />
+<meta name="description" content="PV Herrera — experimental post-rock from San Luis Obispo, California. Self-released since 2011." />
 <meta name="google-site-verification" content="_ZA9JeeV_5nEiC3fooafnKAVxZ2lSLtadMPrrmyP-eo" />
 
 <!-- SEO / indexing -->
@@ -12,13 +12,13 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 <meta name="author" content="PV Herrera" />
 <meta name="theme-color" content="#0a4670" />
-<meta name="keywords" content="PV Herrera, post-rock, experimental rock, instrumental, San Luis Obispo, Bandcamp, Musical Tangents" />
+<meta name="keywords" content="PV Herrera, post-rock, experimental rock, instrumental, San Luis Obispo, Apple Music, Musical Tangents" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="PV Herrera" />
 <meta property="og:title" content="PV Herrera — Musical Tangents" />
-<meta property="og:description" content="Experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp." />
+<meta property="og:description" content="Experimental post-rock from San Luis Obispo, California. Self-released." />
 <meta property="og:url" content="https://www.pvherreramusic.com/" />
 <meta property="og:image" content="https://f4.bcbits.com/img/a4012467896_10.jpg" />
 <meta property="og:image:width" content="1200" />
@@ -45,16 +45,15 @@
       "url": "https://www.pvherreramusic.com/",
       "email": "pvherrerabooking@gmail.com",
       "image": "https://f4.bcbits.com/img/a4012467896_10.jpg",
-      "description": "Experimental post-rock from San Luis Obispo, California. Self-released on Bandcamp.",
+      "description": "Experimental post-rock from San Luis Obispo, California. Self-released.",
       "sameAs": [
-        "https://pvherrera.bandcamp.com/",
         "https://www.youtube.com/@PVHerrera",
         "https://music.apple.com/us/album/cigarettes-and-weddings/6837462444"
       ],
       "album": [
-        { "@type": "MusicAlbum", "name": "Xanax and Mercy", "datePublished": "2019-06-30", "url": "https://pvherrera.bandcamp.com/album/xanax-and-mercy", "image": "https://f4.bcbits.com/img/a0817267631_5.jpg" },
-        { "@type": "MusicAlbum", "name": "Cigarettes and Weddings", "datePublished": "2012-09-09", "url": "https://pvherrera.bandcamp.com/album/cigarettes-and-weddings", "sameAs": "https://music.apple.com/us/album/cigarettes-and-weddings/6837462444", "image": "https://f4.bcbits.com/img/a4012467896_10.jpg" },
-        { "@type": "MusicAlbum", "name": "Her Atmosphere Causes the Fear", "datePublished": "2011-06-23", "url": "https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear", "image": "https://f4.bcbits.com/img/a0321114466_5.jpg" }
+        { "@type": "MusicAlbum", "name": "Xanax and Mercy", "datePublished": "2019-06-30", "image": "https://f4.bcbits.com/img/a0817267631_5.jpg" },
+        { "@type": "MusicAlbum", "name": "Cigarettes and Weddings", "datePublished": "2012-09-09", "url": "https://music.apple.com/us/album/cigarettes-and-weddings/6837462444", "image": "https://f4.bcbits.com/img/a4012467896_10.jpg" },
+        { "@type": "MusicAlbum", "name": "Her Atmosphere Causes the Fear", "datePublished": "2011-06-23", "image": "https://f4.bcbits.com/img/a0321114466_5.jpg" }
       ]
     },
     {
@@ -414,6 +413,10 @@
   .album-card .am .nm .it{font-style:italic;color:var(--frost)}
   .album-card .am .yr{font-family:var(--mono);font-size:.74rem;color:var(--frost-dim);white-space:nowrap}
   .album-card:hover .am .yr{color:var(--ember)}
+  .album-card.static{cursor:default}
+  .album-card.static .art::after{content:none}
+  .album-card.static:hover .art img{transform:none}
+  .album-card.static:hover .am .yr{color:var(--frost-dim)}
 
   /* active-section nav */
   .nav-links a.active{color:var(--paper)}
@@ -561,8 +564,7 @@
         <p class="rel-blurb">An early full-length, self-released in September 2012 and brought back for its tenth anniversary. Experimental, guitar-driven post-rock out of California's central coast.</p>
         <p class="rel-note">Includes the track "Selena Gomez."</p>
         <div class="rel-links">
-          <a class="rel-listen" href="https://pvherrera.bandcamp.com/album/cigarettes-and-weddings" target="_blank" rel="noopener">Bandcamp →</a>
-          <a class="rel-listen" href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">Apple Music →</a>
+          <a class="rel-listen" href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">Listen on Apple Music →</a>
         </div>
       </div>
     </div>
@@ -578,21 +580,18 @@
     </div>
     <div class="reveal">
       <div class="disc-grid">
-        <a class="album-card" href="https://pvherrera.bandcamp.com/album/xanax-and-mercy" target="_blank" rel="noopener">
+        <div class="album-card static">
           <div class="art"><img src="https://f4.bcbits.com/img/a0817267631_5.jpg" alt="Cover of Xanax and Mercy by PV Herrera" loading="lazy" /></div>
           <div class="am"><span class="nm">Xanax and <span class="it">Mercy</span></span><span class="yr">2019</span></div>
-        </a>
-        <a class="album-card" href="https://pvherrera.bandcamp.com/album/cigarettes-and-weddings" target="_blank" rel="noopener">
+        </div>
+        <a class="album-card" href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">
           <div class="art"><img src="https://f4.bcbits.com/img/a4012467896_5.jpg" alt="Cover of Cigarettes and Weddings by PV Herrera" loading="lazy" /></div>
           <div class="am"><span class="nm">Cigarettes and <span class="it">Weddings</span></span><span class="yr">2012</span></div>
         </a>
-        <a class="album-card" href="https://pvherrera.bandcamp.com/album/her-atmosphere-causes-the-fear" target="_blank" rel="noopener">
+        <div class="album-card static">
           <div class="art"><img src="https://f4.bcbits.com/img/a0321114466_5.jpg" alt="Cover of Her Atmosphere Causes the Fear by PV Herrera" loading="lazy" /></div>
           <div class="am"><span class="nm">Her Atmosphere <span class="it">Causes the Fear</span></span><span class="yr">2011</span></div>
-        </a>
-      </div>
-      <div class="disc-foot">
-        <a href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Full catalog on Bandcamp →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -608,7 +607,7 @@
     <div class="reveal">
       <div class="empty">
         <p>No dates on the calendar right now.</p>
-        <a class="follow" href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Follow on Bandcamp →</a>
+        <a class="follow" href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">Follow on YouTube →</a>
       </div>
     </div>
   </div>
@@ -623,14 +622,14 @@
     <div class="about-grid reveal">
       <div class="about-body">
         <p><span class="lead">PV Herrera is an experimental post-rock project from San Luis Obispo, on the central coast of California.</span> The sound sits somewhere between indie, experimental rock, and post-rock — guitar-led and self-released, made to be heard end to end.</p>
-        <p>Records have been arriving on Bandcamp since 2012, from the early full-length <em>Cigarettes and Weddings</em> through <em>Xanax and Mercy</em> in 2019.</p>
-        <p>Everything lives on Bandcamp — that's the best place to hear it.</p>
+        <p>Records have been arriving since 2011, from <em>Her Atmosphere Causes the Fear</em> through <em>Xanax and Mercy</em> in 2019.</p>
+        <p>It's all on Apple Music and YouTube — the best places to hear it.</p>
       </div>
       <div class="roster">
         <div class="member"><span class="mn">San Luis Obispo, CA</span><span class="mr">Based in</span></div>
         <div class="member"><span class="mn">Experimental · Post-rock</span><span class="mr">Sounds like</span></div>
         <div class="member"><span class="mn">Since 2012</span><span class="mr">Releasing</span></div>
-        <div class="member"><span class="mn">Bandcamp</span><span class="mr">Find it on</span></div>
+        <div class="member"><span class="mn">Apple Music</span><span class="mr">Find it on</span></div>
       </div>
     </div>
   </div>
@@ -644,9 +643,8 @@
         <div class="foot-name">PV HERRERA</div>
         <span class="eyebrow cool">Listen</span>
         <div class="listen">
-          <a href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
-          <a href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">YouTube</a>
           <a href="https://music.apple.com/us/album/cigarettes-and-weddings/6837462444" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">YouTube</a>
         </div>
         <div class="foot-booking" id="booking">
           <span class="eyebrow cool">Booking &amp; press</span>
@@ -655,13 +653,13 @@
       </div>
       <div class="signup">
         <label>New music</label>
-        <p>Releases land on Bandcamp first. Follow there to catch the next one.</p>
-        <a class="follow" href="https://pvherrera.bandcamp.com/" target="_blank" rel="noopener">Follow on Bandcamp →</a>
+        <p>Follow along on YouTube to catch the next release.</p>
+        <a class="follow" href="https://www.youtube.com/@PVHerrera" target="_blank" rel="noopener">Follow on YouTube →</a>
       </div>
     </div>
     <div class="colophon">
       <span>© PV Herrera · San Luis Obispo, CA</span>
-      <span>Self-released on Bandcamp</span>
+      <span>Self-released</span>
     </div>
   </div>
 </footer>
@@ -772,7 +770,7 @@
     });
   }
 
-  /* ---------- (mailing-list form removed; follow links go straight to Bandcamp) ---------- */
+  /* ---------- (mailing-list form removed; follow links go to YouTube) ---------- */
 })();
 </script><button class="to-top" id="toTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
